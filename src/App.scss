@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+h1, h3 {
+  color: #8c9900;
+}
+
+form {
+  width: 10%;
+  margin: 0 auto;
+  text-align: start;
+
+  label, input {
+    margin: 1%;
+    color: #9e9e9e;
+  }
+
+  input {
+    border: 1px solid #9e9e9e;
+    border-radius: 9px;
+    margin-bottom: 6px;
+  }
+
+  .formBtn {
+    background-color: #c0ca33;
+    color: white;
+    border-radius: 9px;
+    border: 0;
+    padding: 2%;
+  }
+}
+
+
+.btnAttendee {
+  background-color: #c0ca33;
+  color: white;
+  border-radius: 9px;
+  border: 0;
+  padding: 0.5%;
+  margin-bottom: 20px;
+}
+
+.attendeeTable {
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 0.5%;
+  width: 40%;
+
+  td, th {
+    text-align: start;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  td {
+    color:#9e9e9e;;
+  }
+
+  th {
+    color: #8c9900;
+  }
+}
