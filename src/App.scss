@@ -1,5 +1,17 @@
 .App {
   text-align: center;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+svg {
+  width: 20px;
+  top: 100;
+  left: -100;
+  position: fixed;
 }
 
 h1, h3 {
