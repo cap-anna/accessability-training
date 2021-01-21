@@ -1,17 +1,15 @@
 .App {
   text-align: center;
-  position: fixed;
-  top: 10%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-50%);
 }
 
-svg {
-  width: 20px;
-  top: 100;
-  left: -100;
-  position: fixed;
+/** {
+  cursor: none;
+} */
+
+#falsecursor{
+  position: absolute;
+  z-index: 1;
+  transition: top 0.2s, left 0.2s linear;
 }
 
 h1, h3 {
