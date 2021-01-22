@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
 }
 
 * {
@@ -13,7 +17,7 @@
 }
 
 h1, h3 {
-  color: #8c9900;
+  color: #0070ad;
 }
 
 form {
@@ -33,7 +37,7 @@ form {
   }
 
   .formBtn {
-    background-color: #c0ca33;
+    background-color::#ff304c;
     color: white;
     border-radius: 9px;
     border: 0;
@@ -43,7 +47,7 @@ form {
 
 
 .btnAttendee {
-  background-color: #c0ca33;
+  background-color:#ff304c;
   color: white;
   border-radius: 9px;
   border: 0;
@@ -68,6 +72,6 @@ form {
   }
 
   th {
-    color: #8c9900;
+    color: #0070ad;
   }
 }
