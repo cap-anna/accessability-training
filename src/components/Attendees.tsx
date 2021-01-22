@@ -1,8 +1,7 @@
-import React, { FormEvent, useEffect, useState } from "react"
+import React, { FormEvent } from "react"
 import { useAttendees } from "./AttendeeHook"
 import { NewAttendeeForm } from "./NewAttendeeForm"
-import moment from 'moment'
-const SimplexNoise = require('simplex-noise')
+// const SimplexNoise = require('simplex-noise')
 
 export type Attendee = {
     id: string,

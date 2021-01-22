@@ -28,37 +28,38 @@ function App() {
   }
 
   const [cursor, setCursor] = useState({clientX: 0, clientY: 0})
-
-  const handleMouse = (e: any) => {
-    setCursor({clientX: e.clientX, clientY: e.clientY})
-  }
-
   const [style, setStyle] = useState({
       top: 0,
       left: 0,
   })
 
-    
+  const handleMouse = (e: any) => {
+    setCursor({clientX: e.clientX, clientY: e.clientY})
+  }
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-    //const randX = sampleInt(tremorBasePx)
-    //const randY = sampleInt(tremorBasePx)
-    //console.log(randX, randY)
+  const handleMouseClick = () => {
+    const x = style.left
+    const y = style.top
+    const element: HTMLElement = document.elementFromPoint(x, y) as HTMLElement
+    element?.click()
+  }
+
+ // useEffect(() => {
+  const randX = sampleInt(tremorBasePx)
+  const randY = sampleInt(tremorBasePx)
+    setInterval(() => {
     
-    setStyle ({
-        top: cursor.clientY,
-        left: cursor.clientX
-        
-      })
-    }, 20)
-  })
-  console.log(cursor)
-  console.log(style)
+    setStyle({
+      top: cursor.clientY + randY,
+      left: cursor.clientX + randX
+    })}, 200)
+  //}, [cursor])
+
+    
 
   return (
     <div>
-    <div className="App" onMouseOver={handleMouse}>
+    <div className="App" onMouseOver={handleMouse} onClick={handleMouseClick}>
       
       <header>
         <h1>Accessability Training</h1>
