@@ -82,7 +82,7 @@ function App() {
         top: randY,
         left: randX
       })
-    }, 200)
+    }, 100)
  //}, [cursor])
 
     
